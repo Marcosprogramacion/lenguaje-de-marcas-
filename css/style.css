@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+
+    width: 100%;
+
+}
+
+header{
+
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px;
+}
+
+ul{
+
+    padding: 1rem;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    min-width: 300px;
+    
+}
+
+ul>li>img{
+
+    width: 50px;
+    height: 50px;
+
+}
