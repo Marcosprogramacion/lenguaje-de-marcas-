@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre los Datos - Catálogo de Anime y Manga</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Volver al inicio</a>
+        <h1>Sobre los Datos y la Fuente de Información</h1>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h2>Información de la API y Atribución</h2>
+                <p>Los datos que estructuran este catálogo provienen de servicios públicos enfocados en la indexación de contenido multimedia de animación y literatura japonesa.</p>
+                <ul>
+                    <li><strong>API Utilizada:</strong> Jikan API (v4), una API REST no oficial pero abierta y gratuita para MyAnimeList.</li>
+                    <li><strong>Mantenimiento:</strong> Desarrollada y mantenida por la comunidad de código abierto liderada por Irfan Dahdah y colaboradores en GitHub.</li>
+                    <li><strong>Licencia de la API:</strong> Licencia MIT (Open Source).</li>
+                    <li><strong>Atribución de los Datos:</strong> Los datos originales de las obras, sinopsis, puntuaciones y portadas pertenecen a <strong>MyAnimeList</strong> y a sus respectivos autores, editoriales y estudios de animación. Deben ser atribuidos a MyAnimeList (<code>https://myanimelist.net/</code>).</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Peticiones HTTP Realizadas</h2>
+                <p>Para la construcción de este sitio web, se han consultado endpoints específicos de la API mediante peticiones GET:</p>
+                <ul>
+                    <li><code>GET https://api.jikan.moe/v4/manga?q=Berserk&amp;limit=1</code>: Consulta de información detallada del manga Berserk.</li>
+                    <li><code>GET https://api.jikan.moe/v4/manga?q=Fullmetal%20Alchemist&amp;limit=1</code>: Petición para obtener los datos de Fullmetal Alchemist.</li>
+                    <li><code>GET https://api.jikan.moe/v4/manga?q=Frieren&amp;limit=1</code>: Recuperación de metadatos de Sousou no Frieren.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Transformación de Datos: Del JSON al HTML</h2>
+                <p>A continuación se muestra un fragmento real devuelto por la API en formato <strong>JSON</strong> y cómo se ha transformado manualmente a etiquetas semánticas de <strong>HTML</strong> para mostrar la ficha del elemento.</p>
+                
+                <h3>1. Fragmento real del JSON (Código fuente)</h3>
+                <pre><code>{
+  "mal_id": 2,
+  "url": "https://myanimelist.net/manga/2/Berserk",
+  "title": "Berserk",
+  "score": 9.47,
+  "scored_by": 375410,
+  "rank": 1,
+  "status": "Publishing",
+  "chapters": null,
+  "synopsis": "Guts, a former mercenary now known as the "Black Swordsman", is looking for slaughter..."
+}</code></pre>
+                <h3>2. Conversión a HTML estructurado</h3>
+                <p>Este bloque representa cómo se traduce la estructura anterior a lenguaje de marcas para ser renderizada en el navegador:</p>
+                <article>
+                    <h3>Berserk</h3>
+                    <ul>
+                        <li><strong>Puntuación:</strong> 9.47</li>
+                        <li><strong>Ranking:</strong> #1</li>
+                        <li><strong>Estado:</strong> Publishing</li>
+                        <li><strong>Sinopsis:</strong> Guts, a former mercenary now known as the "Black Swordsman", is looking for slaughter...</li>
+                    </ul>
+                </article>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Proyecto académico de Lenguaje de Marcas - Datos obtenidos a través de Jikan API / MyAnimeList[cite: 4].</p>
+    </footer>
+</body>
+</html>
