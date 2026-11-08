@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Anime</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">Volver al inicio</a>
+        <h1>Proponer un Nuevo Elemento al Catálogo</h1>
+    </header>
+    <main>
+        <article>
+            <p>Utiliza el siguiente formulario para proponer la incorporación de un nuevo anime o manga al catálogo. Rellena todos los campos obligatorios indicados.</p>
+            <form>
+                <fieldset>
+                    <legend>Información Básica</legend>
+                    <p>
+                        <label for="titulo">Título de la obra (*):</label><br>
+                        <input type="text" id="titulo" name="titulo" required minlength="2" maxlength="100">
+                    </p>
+                    <p>
+                        <label for="tipo">Tipo (*):</label><br>
+                        <select id="tipo" name="tipo" required>
+                            <option value="">-- Selecciona una opción --</option>
+                            <option value="anime">Anime</option>
+                            <option value="manga">Manga</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="imagen">URL de la imagen de portada (*):</label><br>
+                        <input type="url" id="imagen" name="imagen" required placeholder="https://ejemplo.com/portada.jpg">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Métricas y Datos Clave</legend>
+                    <p>
+                        <label for="puntuacion">Puntuación (de 0 a 10) (*):</label><br>
+                        <input type="number" id="puntuacion" name="puntuacion" min="0" max="10" step="0.01" required>
+                    </p>
+                    <p>
+                        <label for="episodios">Número de episodios / capítulos (*):</label><br>
+                        <input type="number" id="episodios" name="episodios" min="1" max="5000" required>
+                    </p>
+                    <p>
+                        <label for="estado">Estado (*):</label><br>
+                        <select id="estado" name="estado" required>
+                            <option value="">-- Selecciona un estado --</option>
+                            <option value="publishing">En publicación / emisión</option>
+                            <option value="finished">Finalizado</option>
+                            <option value="paused">Pausado</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Detalles Adicionales</legend>
+                    <p>
+                        <label for="fecha">Fecha de inicio de publicación (opcional):</label><br>
+                        <input type="date" id="fecha" name="fecha">
+                    </p>
+                    <p>
+                        <label for="sinopsis">Sinopsis (mínimo 20 caracteres) (*):</label><br>
+                        <textarea id="sinopsis" name="sinopsis" rows="5" cols="40" required minlength="20"></textarea>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Enviar propuesta</button>
+                    <button type="reset">Limpiar formulario</button>
+                </p>
+            </form>
+        </article>
+    </main>
+    <footer>
+        <p>Formulario de propuesta.</p>
+    </footer>
+</body>
+</html>

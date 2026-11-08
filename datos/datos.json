@@ -1,0 +1,106 @@
+{
+  "catalogo": {
+    "sitio": "All Anime",
+    "fuente": "MyAnimeList API",
+    "animes_destacados": [
+      {
+        "titulo": "Fullmetal Alchemist: Brotherhood",
+        "puntuacion": 9.10,
+        "episodios": 64,
+        "estado": "Finalizado",
+        "imagen": "assets/imagenes/fullmetal.webp",
+        "ficha": "fichas/fullmetal_Alchemist.html"
+      },
+      {
+        "titulo": "Shingeki no Kyojin (Attack on Titan)",
+        "puntuacion": 8.55,
+        "episodios": 25,
+        "estado": "Finalizado",
+        "imagen": "assets/imagenes/atack_on_titan.webp",
+        "ficha": null
+      },
+      {
+        "titulo": "Sousou no Frieren",
+        "puntuacion": 9.33,
+        "episodios": 28,
+        "estado": "Finalizado",
+        "imagen": "assets/imagenes/frieren.webp",
+        "ficha": "fichas/Frieren.html"
+      },
+      {
+        "titulo": "Steins;Gate",
+        "puntuacion": 9.07,
+        "episodios": 24,
+        "estado": "Finalizado",
+        "imagen": "assets/imagenes/steins_gate.webp",
+        "ficha": null
+      },
+      {
+        "titulo": "Hunter x Hunter (2011)",
+        "puntuacion": 9.04,
+        "episodios": 148,
+        "estado": "Finalizado",
+        "imagen": "assets/imagenes/hunter_x_hunter.webp",
+        "ficha": null
+      },
+      {
+        "titulo": "Kimetsu no Yaiba",
+        "puntuacion": 8.48,
+        "episodios": 26,
+        "estado": "Finalizado",
+        "imagen": "assets/imagenes/demon_slayer.jpg",
+        "ficha": null
+      }
+    ],
+    "mangas_destacados": [
+      {
+        "titulo": "Berserk",
+        "puntuacion": 9.47,
+        "capitulos": "380+",
+        "estado": "En publicación",
+        "imagen": "assets/imagenes/berserk.webp",
+        "ficha": "fichas/Berserk.html"
+      },
+      {
+        "titulo": "One Piece",
+        "puntuacion": 9.22,
+        "capitulos": "1100+",
+        "estado": "En publicación",
+        "imagen": "assets/imagenes/one_piece.webp",
+        "ficha": null
+      },
+      {
+        "titulo": "Monster",
+        "puntuacion": 9.15,
+        "capitulos": 162,
+        "estado": "Finalizado",
+        "imagen": "assets/imagenes/monster.jpg",
+        "ficha": null
+      },
+      {
+        "titulo": "Death Note",
+        "puntuacion": 8.70,
+        "capitulos": 108,
+        "estado": "Finalizado",
+        "imagen": "assets/imagenes/death_note.jpg",
+        "ficha": null
+      },
+      {
+        "titulo": "Vagabond",
+        "puntuacion": 9.25,
+        "capitulos": 327,
+        "estado": "Pausado",
+        "imagen": "assets/imagenes/vagabond.jpg",
+        "ficha": null
+      },
+      {
+        "titulo": "Naruto",
+        "puntuacion": 7.93,
+        "capitulos": 700,
+        "estado": "Finalizado",
+        "imagen": "assets/imagenes/naruto.webp",
+        "ficha": null
+      }
+    ]
+  }
+}
