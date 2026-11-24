@@ -136,3 +136,17 @@ img{
     
 }
 
+.cuerpo_segundo-articulo{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.segundo-articulo__titulo{
+
+    display: flex;
+    justify-content: center;
+
+}
+
