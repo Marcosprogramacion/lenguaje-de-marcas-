@@ -101,3 +101,17 @@ img{
     color:#000000
 
 }
+
+.primer-articulo__segunda-seccion{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.segunda-seccion__imagen{
+
+    margin: 1.5rem;
+    width: 50%;
+    border: 5px solid black;
+}
