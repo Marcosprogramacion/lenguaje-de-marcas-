@@ -136,17 +136,51 @@ img{
     
 }
 
-.cuerpo_segundo-articulo{
+.cuerpo__segundo-articulo{
 
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
 }
 
 .segundo-articulo__titulo{
 
+    width: 100%;
+    text-align: center;
+
+}
+
+
+.segundo-articulo__seccion1{
+
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
 }
+
+.segundo-articulo__seccion2{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.seccion1__primera-imagen{
+
+    width: 30%;
+
+}
+
+.seccion2__segunda-imagen{
+
+    width: 30%;
+
+}
+
+
+
+
 
