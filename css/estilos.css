@@ -106,6 +106,8 @@ img{
 
     display: flex;
     justify-content: center;
+    border: 5px solid black;
+    position: relative;
 
 }
 
@@ -113,5 +115,24 @@ img{
 
     margin: 1.5rem;
     width: 50%;
-    border: 5px solid black;
+    
 }
+
+.segunda-seccion__selector-right{
+
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    font-size: 50px;
+    
+}
+
+.segunda-seccion__selector-left{
+
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    font-size: 50px;
+    
+}
+
